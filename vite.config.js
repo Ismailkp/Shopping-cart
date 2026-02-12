@@ -7,4 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(), // Add the plugin here
   ],
+  base:process.env.VITE_BASE_PATH || "/Shopping-cart"
 });
