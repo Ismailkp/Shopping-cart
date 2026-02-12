@@ -9,7 +9,7 @@ export const Header = () => {
     }`;
 
   return (
-    <nav className="bg-blue-500 shadow-md fixed top-0 left-0 right-0">
+    <nav className="bg-blue-500 shadow-md fixed top-0 left-0 right-0 gridgrid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <div className="container mx-auto px-4">
         <ul className="flex items-center justify-between h-12">
           <li>
