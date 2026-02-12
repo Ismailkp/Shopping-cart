@@ -17,7 +17,7 @@ export const Header = () => {
 
           {/* Logo / Home */}
           <NavLink to="/" className="text-white font-bold text-lg">
-            MyApp
+            I-Shop
           </NavLink>
 
           {/* Hamburger Button (Mobile Only) */}
