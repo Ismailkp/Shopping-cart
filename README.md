@@ -1,16 +1,48 @@
-# React + Vite
+🛒 Shopping Cart App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce shopping cart built with React + Vite, featuring dynamic cart management and responsive UI for seamless shopping experiences.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Browse product listings
 
-## React Compiler
+Add and remove items from the cart
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clear all items at once
 
-## Expanding the ESLint configuration
+Increase or decrease item quantity in cart
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Dynamic price calculation
+
+Select payment options
+
+Fully responsive design
+
+🛠 Tech Stack
+
+React – Frontend framework
+
+Redux – State management
+
+React Router – Dynamic routing
+
+Vite – Development server and build tool
+
+JavaScript / HTML5 / CSS / Tailwind CSS – Core web technologies
+
+🌍 Live Demo
+
+Check it out here ->https://shopping-cart-bice-kappa.vercel.app/
+
+💻 Installation
+
+Clone the repo and install dependencies:
+
+git clone https://github.com/Ismailkp/Shopping-cart.git
+cd Shopping-cart
+npm install
+npm run dev
+
+
+Deployed using Vercel:
+https://shopping-cart-bice-kappa.vercel.app
