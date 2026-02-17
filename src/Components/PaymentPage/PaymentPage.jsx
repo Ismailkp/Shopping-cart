@@ -6,6 +6,7 @@ const PaymentPage = () => {
   const { id } = useParams()
   const { data = [] } = useSelector((state) => state.cart)
 
+  // Find the product in the cart
   const product = data.find((item) => item.id === Number(id))
 
   if (!product) {
@@ -18,6 +19,9 @@ const PaymentPage = () => {
     )
   }
 
+  // Calculate total for this product
+  const totalAmount = product.price * (product.quantity || 1)
+
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
 
@@ -26,7 +30,6 @@ const PaymentPage = () => {
 
         {/* Product Section */}
         <div className="bg-white shadow-lg rounded-2xl p-5 sm:p-8 flex flex-col items-center lg:items-start">
-
           <img
             src={Array.isArray(product.images) ? product.images[0] : product.images}
             alt={product.title}
@@ -51,6 +54,10 @@ const PaymentPage = () => {
             >
               {product.availabilityStatus}
             </p>
+
+            <p className="mt-2 text-gray-700 text-sm sm:text-base">
+              Quantity: {product.quantity || 1}
+            </p>
           </div>
         </div>
 
@@ -73,6 +80,11 @@ const PaymentPage = () => {
             <button className="w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 rounded-xl transition duration-300 text-sm sm:text-base">
               Cash on Delivery
             </button>
+
+            {/* Total Amount at Bottom */}
+            <p className="mt-4 text-gray-800 font-semibold text-center sm:text-left text-lg sm:text-xl">
+              Total Amount to Pay: <span className="text-amber-600">${totalAmount.toFixed(2)}</span>
+            </p>
 
           </div>
         </div>
