@@ -15,6 +15,7 @@ const Cart=React.lazy(()=>import('./Components/Cart/Cart.jsx'))
 const Contact=React.lazy(()=>import('./Components/Contact/Contact.jsx'))
 const Login =React.lazy(()=>import('./Components/Login/Login.jsx'))
 const Noresult=React.lazy(()=>import('./Components/Error/Noresult.jsx'))
+const PaymentPage = React.lazy(() => import('./Components/PaymentPage/PaymentPage.jsx'))
 
 
 
@@ -76,6 +77,15 @@ let router = createBrowserRouter(
           </Suspense>
         }
       />
+<Route 
+  path='payment/:id'
+  element={
+    <Suspense fallback={<h4>Loading Payment...</h4>}>
+      <PaymentPage />
+    </Suspense>
+  }
+/>
+
     </Route>
     </>
   )
